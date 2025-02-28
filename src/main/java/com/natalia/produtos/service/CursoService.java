@@ -3,7 +3,6 @@ package com.natalia.produtos.service;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.natalia.produtos.entity.Curso;
@@ -13,7 +12,6 @@ import com.natalia.produtos.repository.CursoRepository;
 public class CursoService {
   private final CursoRepository cursoRepository;
 
-  @Autowired
   public CursoService(CursoRepository cursoRepository) {
     this.cursoRepository = cursoRepository;
   }
